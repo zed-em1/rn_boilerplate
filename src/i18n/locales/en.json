@@ -1,0 +1,18 @@
+{
+  "FIRST": "FIRST",
+  "SECOND": "SECOND",
+  "HOME": "HOME",
+  "MON": "MON",
+  "TUE": "TUE",
+  "WED": "WED",
+  "THU": "THU",
+  "FRI": "FRI",
+  "SAT": "SAT",
+  "SUN": "SUN",
+  "WELCOME_HEADING":"Welcome to Hundo",
+  "WELCOME_TEXT":"Experience the blissful fusion of health and flavor with our delectable and nourishing meal options",
+  "VERIFICATION_CODE":"Verify your Number",
+  "VERIFICATION_CONTENT":"Enter the code sent to your Phone number",
+  "RESEND_OTP":"Resend OTP",
+   "Create_New_Profile": "Create New Profile"
+}
