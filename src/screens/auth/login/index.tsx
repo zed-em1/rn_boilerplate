@@ -23,6 +23,11 @@ const Login = (props: LoginProps) => {
         title="CHANGE LANGUAGE To English"
         onPress={() => i18n.changeLanguage('en')}
       />
+      <Button
+        color={colors.text}
+        title="NAVIGATE TO TABS"
+        onPress={() => NavigationService.navigate(SCREEN_NAMES.Tabs)}
+      />
     </View>
   );
 };

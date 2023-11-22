@@ -32,6 +32,7 @@ import { SCREEN_NAMES } from './constants';
 import { Home, Login, Notification } from './screens';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Theme } from './theme';
+import { AsyncClient } from './utills';
 
 function App(): JSX.Element {
   const navigationRef = useNavigationContainerRef();
