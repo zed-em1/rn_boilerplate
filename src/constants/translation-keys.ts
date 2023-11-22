@@ -1,0 +1,4 @@
+export enum TRANSLATION_KEYS {
+  FIRST = 'FIRST',
+  SECOND = 'SECOND',
+}

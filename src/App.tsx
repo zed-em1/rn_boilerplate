@@ -44,17 +44,19 @@ function App(): JSX.Element {
 
   console.log('ENV', ENV, API_URL);
   return (
-    <NavigationContainer
-      ref={navigationRef}
-      theme={isDarkMode ? Theme.dark : Theme.light}
-    >
-      <MainStack />
-      {/* <Stack.Navigator>
+    <SafeAreaView style={{ flex: 1 }}>
+      <NavigationContainer
+        ref={navigationRef}
+        theme={isDarkMode ? Theme.dark : Theme.light}
+      >
+        <MainStack />
+        {/* <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Notification" component={Notification} />
         <Stack.Screen name="LogIn" component={Login} />
       </Stack.Navigator> */}
-    </NavigationContainer>
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }
 

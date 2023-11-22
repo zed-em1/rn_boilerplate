@@ -1,13 +1,12 @@
-import { en, ar } from '../locales';
+import { en, sp } from '../locales';
 
 export const resources = {
   en: {
     translation: en,
   },
-  ar: {
-    translation: ar,
+  sp: {
+    translation: sp,
   },
-
 };
 
 export default resources;

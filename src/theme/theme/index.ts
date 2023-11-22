@@ -1,7 +1,5 @@
 import Colors from '../colors';
 
-
-
 const light = {
   dark: false,
   colors: {
@@ -9,9 +7,8 @@ const light = {
     background: 'rgb(242, 242, 242)',
     card: 'rgb(255, 255, 255)',
     text: Colors.PrimaryTextColor,
-    border: 'rgb(199, 199, 204)',
+    border: 'black',
     notification: 'rgb(255, 69, 58)',
-    xyz: 'yellow',
   },
 };
 
@@ -19,12 +16,11 @@ const dark = {
   dark: true,
   colors: {
     primary: Colors.Red,
-    background: 'rgb(242, 242, 242)',
+    background: 'red',
     card: 'rgb(255, 255, 255)',
     text: Colors.White,
-    border: 'rgb(199, 199, 204)',
+    border: 'white',
     notification: 'rgb(255, 69, 58)',
-    xyz: 'yellow',
   },
 };
 
