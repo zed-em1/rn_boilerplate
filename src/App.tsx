@@ -25,7 +25,7 @@ import {
   NavigationContainer,
   useNavigationContainerRef,
 } from '@react-navigation/native';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 
 import { NavigationService } from './services';
 import { MainStack } from './navigation';
@@ -34,6 +34,7 @@ import { Home, Login, Notification } from './screens';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Theme } from './theme';
 import store from './redux/store';
+import { AsyncClient } from './utills';
 
 function App(): JSX.Element {
   const navigationRef = useNavigationContainerRef();
@@ -47,13 +48,14 @@ function App(): JSX.Element {
   console.log('ENV', ENV, API_URL);
   return (
     <Provider store={store}>
-
-    <NavigationContainer
-      ref={navigationRef}
-      theme={isDarkMode ? Theme.dark : Theme.light}
-    >
-      <MainStack />
-    </NavigationContainer>
+      <SafeAreaView style={{ flex: 1 }}>
+        <NavigationContainer
+          ref={navigationRef}
+          theme={isDarkMode ? Theme.dark : Theme.light}
+        >
+          <MainStack />
+        </NavigationContainer>
+      </SafeAreaView>
     </Provider>
   );
 }
