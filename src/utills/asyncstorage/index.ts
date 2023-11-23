@@ -21,10 +21,10 @@ export const clearLocalStorage = async () => {
   try {
     const keys = await AsyncStorage.getAllKeys();
     await AsyncStorage.multiRemove(keys);
-  } catch (error) {}
+  } catch (error) { }
 };
 
-export const addItem = async (key: string, value: any) => {
+export const setItem = async (key: string, value: any) => {
   try {
     await AsyncStorage.setItem(key, JSON.stringify(value));
   } catch (error) {
