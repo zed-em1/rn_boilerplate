@@ -6,8 +6,6 @@ import {
   TabActions,
 } from '@react-navigation/native';
 
-
-
 let _navigator: any;
 
 function setTopLevelNavigator(navigatorRef: any) {

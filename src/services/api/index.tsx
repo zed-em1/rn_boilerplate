@@ -1,10 +1,7 @@
 import Axios from 'axios';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import NavigationService from '../navigationService';
 import { useDispatch, useSelector } from 'react-redux';
-import AsyncStorageAdapter from '../../utills/asyncStorageAdapter/';
 import { AsyncClient } from '../../utills';
-import { ASYNCSTORAGE_KEYS, CONSTANTS } from '../../constants';
+import { ASYNCSTORAGE_KEYS } from '../../constants';
 
 Axios.interceptors.response.use(
   (response) => response,
