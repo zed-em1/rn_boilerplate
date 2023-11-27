@@ -28,6 +28,27 @@ const Login = (props: LoginProps) => {
         title="NAVIGATE TO TABS"
         onPress={() => NavigationService.navigate(SCREEN_NAMES.Tabs)}
       />
+      <Text style={styles.textStyle}> Scandit </Text>
+      <View style={styles.scanditView}>
+        <Button
+          color={colors.text}
+          title="Simple Scan"
+          onPress={() =>
+            NavigationService.navigate(SCREEN_NAMES.Scanner, {
+              name: 'SimpleScan',
+            })
+          }
+        />
+        <Button
+          color={colors.text}
+          title="Selection Scan"
+          onPress={() =>
+            NavigationService.navigate(SCREEN_NAMES.Scanner, {
+              name: 'SelectionScan',
+            })
+          }
+        />
+      </View>
     </View>
   );
 };
@@ -35,5 +56,18 @@ const Login = (props: LoginProps) => {
 export default Login;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    marginHorizontal: 20,
+  },
+  scanditView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  textStyle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    color: '#000',
+  },
 });

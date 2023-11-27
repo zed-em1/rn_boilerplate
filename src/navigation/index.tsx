@@ -1,14 +1,19 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { TabNavigator } from './tab';
-import { AuthStack, HomeStack, NotificationStack } from './stack';
+import { AuthStack, HomeStack, NotificationStack, ScannerStack } from './stack';
 import { SCREEN_NAMES } from '../constants';
 import { Colors } from '../theme';
 
 export const MainStack = () => {
   const Stack = createStackNavigator();
   const { Navigator, Screen } = Stack;
-  const AppStacks = [...AuthStack, ...HomeStack, ...NotificationStack];
+  const AppStacks = [
+    ...AuthStack,
+    ...HomeStack,
+    ...NotificationStack,
+    ...ScannerStack,
+  ];
 
   return (
     <Navigator

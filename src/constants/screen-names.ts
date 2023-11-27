@@ -3,4 +3,5 @@ export enum SCREEN_NAMES {
   Home = 'Home',
   Notification = 'Notification',
   Tabs = 'Tabs',
-};
+  Scanner = 'Scanner',
+}
