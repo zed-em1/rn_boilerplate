@@ -1,1 +1,2 @@
-export * as AsyncClient from './asyncstorage';
+import * as AsyncClient from './asyncstorage';
+export { AsyncClient };
